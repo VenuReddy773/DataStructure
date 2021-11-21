@@ -11,7 +11,7 @@ namespace DataStructures
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option : \n 1.Create Simple Linked List \n 2.AddInReverse\n3.Exit\n");
+                Console.WriteLine("Choose an Option : \n 1.Create Simple Linked List \n 2.AddInReverse\n 3.InsertBetween\n 4.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,6 +27,12 @@ namespace DataStructures
                         linkedList.Display();
                         break;
                     case 3:
+                        linkedList.Add(56);
+                        linkedList.Add(70);
+                        linkedList.InsertAtParticularPosition(2,99);
+                        linkedList.Display();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
