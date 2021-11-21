@@ -11,7 +11,7 @@ namespace DataStructures
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option : \n 1.Create Simple Linked List \n 2.AddInReverse\n 3.InsertBetween\n 4.Exit\n");
+                Console.WriteLine("Choose an Option : \n 1.Create Simple Linked List \n 2.AddInReverse\n 3.InsertBetween\n 4.RemoveFirstElement\n 5.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +33,14 @@ namespace DataStructures
                         linkedList.Display();
                         break;
                     case 4:
+                        linkedList.Add(56);
+                        linkedList.Add(30);
+                        linkedList.Add(70);
+                        linkedList.RemoveFirstNode();
+                        Console.WriteLine("After removing the first node of Linked List : ");
+                        linkedList.Display();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
